@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nomics.com/v1/currencies/ticker?convert=WIZZLE_WOZZLE&ids=BTC,ETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Authorization:
+      - Bearer 96f98afb46f9bd627815cb0bbd2e3e518be28b04
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=10, stale-while-revalidate=20, stale-if-error=20
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Pagination-Total-Items:
+      - '2'
+      Date:
+      - Mon, 07 Feb 2022 21:10:28 GMT
+      Content-Length:
+      - '1147'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":"BTC","currency":"BTC","symbol":"BTC","name":"Bitcoin","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg","status":"active","price":"0.00000000","price_date":"2022-02-07T00:00:00Z","price_timestamp":"2022-02-07T21:09:00Z","circulating_supply":"18951450","max_supply":"21000000","market_cap_dominance":"NaN","num_exchanges":"408","num_pairs":"85051","num_pairs_unmapped":"6783","first_candle":"2011-08-18T00:00:00Z","first_trade":"2011-08-18T00:00:00Z","first_order_book":"2017-01-06T00:00:00Z","rank":"3","rank_delta":"0"},{"id":"ETH","currency":"ETH","symbol":"ETH","name":"Ethereum","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg","status":"active","platform_currency":"ETH","price":"0.00000000","price_date":"2022-02-07T00:00:00Z","price_timestamp":"2022-02-07T21:09:00Z","circulating_supply":"119486421","market_cap_dominance":"NaN","num_exchanges":"441","num_pairs":"78112","num_pairs_unmapped":"58460","first_candle":"2015-08-07T00:00:00Z","first_trade":"2015-08-07T00:00:00Z","first_order_book":"2018-08-29T00:00:00Z","rank":"4","rank_delta":"0"}]
+
+        '
+  recorded_at: Mon, 07 Feb 2022 21:10:28 GMT
+recorded_with: VCR 6.0.0

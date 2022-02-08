@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nomics.com/v1/currencies/ticker?convert&ids=BTC,ETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.1.0
+      Authorization:
+      - Bearer 96f98afb46f9bd627815cb0bbd2e3e518be28b04
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=10, stale-while-revalidate=20, stale-if-error=20
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Pagination-Total-Items:
+      - '2'
+      Date:
+      - Mon, 07 Feb 2022 21:00:59 GMT
+      Content-Length:
+      - '1122'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"BTC","currency":"BTC","symbol":"BTC","name":"Bitcoin","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/btc.svg","status":"active","price":"44125.24806823","price_date":"2022-02-07T00:00:00Z","price_timestamp":"2022-02-07T21:00:00Z","circulating_supply":"18951393","max_supply":"21000000","market_cap":"836234917364","market_cap_dominance":"0.4010","num_exchanges":"408","num_pairs":"85051","num_pairs_unmapped":"6783","first_candle":"2011-08-18T00:00:00Z","first_trade":"2011-08-18T00:00:00Z","first_order_book":"2017-01-06T00:00:00Z","rank":"1","rank_delta":"0","high":"67600.78609278","high_timestamp":"2021-11-08T00:00:00Z","1d":{"volume":"34265649793.12","price_change":"2439.74939329","price_change_pct":"0.0585","volume_change":"16785767975.79","volume_change_pct":"0.9603","market_cap_change":"46268664036.74","market_cap_change_pct":"0.0586"},"7d":{"volume":"193482254099.78","price_change":"5603.78171579","price_change_pct":"0.1455","volume_change":"-15252895923.41","volume_change_pct":"-0.0731","market_cap_change":"106436838857.75","market_cap_change_pct":"0.1458"},"30d":{"volume":"963443360998.96","price_change":"2321.40422685","price_change_pct":"0.0555","volume_change":"-111794613723.23","volume_change_pct":"-0.1040","market_cap_change":"45155990673.66","market_cap_change_pct":"0.0571"},"365d":{"volume":"21417875375067.93","price_change":"5211.57356806","price_change_pct":"0.1339","volume_change":"8226752238625.04","volume_change_pct":"0.6237","market_cap_change":"111566959667.85","market_cap_change_pct":"0.1540"},"ytd":{"volume":"1246421923411.12","price_change":"-2173.92062997","price_change_pct":"-0.0470","volume_change":"-268157861631.77","volume_change_pct":"-0.1771","market_cap_change":"-39569093471.28","market_cap_change_pct":"-0.0452"}},{"id":"ETH","currency":"ETH","symbol":"ETH","name":"Ethereum","logo_url":"https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/eth.svg","status":"active","platform_currency":"ETH","price":"3152.52170302","price_date":"2022-02-07T00:00:00Z","price_timestamp":"2022-02-07T21:00:00Z","circulating_supply":"119486421","market_cap":"376683534037","market_cap_dominance":"0.1806","num_exchanges":"441","num_pairs":"78112","num_pairs_unmapped":"58459","first_candle":"2015-08-07T00:00:00Z","first_trade":"2015-08-07T00:00:00Z","first_order_book":"2018-08-29T00:00:00Z","rank":"2","rank_delta":"0","high":"4811.68489959","high_timestamp":"2021-11-08T00:00:00Z","1d":{"volume":"21073327162.14","price_change":"156.49224425","price_change_pct":"0.0522","volume_change":"8533916845.44","volume_change_pct":"0.6806","market_cap_change":"18739166604.86","market_cap_change_pct":"0.0524"},"7d":{"volume":"142710324316.62","price_change":"461.56046524","price_change_pct":"0.1715","volume_change":"-9412187610.63","volume_change_pct":"-0.0619","market_cap_change":"55405198305.66","market_cap_change_pct":"0.1725"},"30d":{"volume":"685644906011.10","price_change":"62.35454641","price_change_pct":"0.0202","volume_change":"-69362890389.68","volume_change_pct":"-0.0919","market_cap_change":"8708530922.79","market_cap_change_pct":"0.0237"},"365d":{"volume":"15688409530133.87","price_change":"1536.97449761","price_change_pct":"0.9514","volume_change":"9074612007986.89","volume_change_pct":"1.3721","market_cap_change":"191579248246.75","market_cap_change_pct":"1.0350"},"ytd":{"volume":"869126978485.93","price_change":"-530.66406088","price_change_pct":"-0.1441","volume_change":"-273037783593.10","volume_change_pct":"-0.2391","market_cap_change":"-61513283810.21","market_cap_change_pct":"-0.1404"}}]
+
+        '
+  recorded_at: Mon, 07 Feb 2022 21:00:59 GMT
+recorded_with: VCR 6.0.0
